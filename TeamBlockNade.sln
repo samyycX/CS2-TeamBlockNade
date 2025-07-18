@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamBlockNade", "TeamBlockNade.csproj", "{1D38D638-67E1-A8B5-21CB-2F815D2BAAB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D38D638-67E1-A8B5-21CB-2F815D2BAAB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D38D638-67E1-A8B5-21CB-2F815D2BAAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D38D638-67E1-A8B5-21CB-2F815D2BAAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D38D638-67E1-A8B5-21CB-2F815D2BAAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1ADEA70-F8FA-4F72-96E1-FF4125EB68EE}
+	EndGlobalSection
+EndGlobal
