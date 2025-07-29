@@ -16,23 +16,25 @@ class Signature {
 
 
   /*
-  find the maybe think function CBaseCSGrenadeProjectile vtb idx on windows (currently 218)
+  find the maybe think function CBaseCSGrenadeProjectile vtb idx on windows (currently 232, maybe need to +1?)
   add one to find the maybe think function on linux
   and follow the same step as windows
   */
-  public static string Linux = "75 ? 49 83 C6 ? 44 39 B5 ? ? ? ? 0F 8F ? ? ? ?";
+  public static string Linux = "75 ? 8B 8D ? ? ? ? 48 83 C3";
 }
 
 public class Plugin : BasePlugin
 {
   public override string ModuleName => "TeamBlockNade";
-  public override string ModuleVersion => "1.0.0";
+  public override string ModuleVersion => "1.0.1";
   public override string ModuleAuthor => "samyycX";
 
   private nint MaybeThink_CheckHitEnemy_IsDifferentTeam_Addr = 0;
 
   public override void Load(bool hotReload)
   {
+
+
     if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
     {
       MaybeThink_CheckHitEnemy_IsDifferentTeam_Addr = NativeAPI.FindSignature(Addresses.ServerPath, Signature.Windows);
@@ -60,8 +62,6 @@ public class Plugin : BasePlugin
       Logger.LogInformation($"Restored {MaybeThink_CheckHitEnemy_IsDifferentTeam_Addr:X}");
     }
   }
-
-
 }
 
 // credits to @xstage
